@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Trial3</string>
+    <string name="add_a_new_item_to_do">Add a new item to do</string>
+    <string name="type_here_the_name_of_the_task">Type here the name of the task</string>
     <string-array name="types">
         <item>Mobile</item>
         <item>Office</item>

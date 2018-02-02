@@ -8,6 +8,9 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="5"
+        android:focusedByDefault="true"
+        android:focusable="true"
+        android:enabled="true"
         android:hint="Type here the name of the task"/>
     <Button
         android:id="@+id/delete_button"

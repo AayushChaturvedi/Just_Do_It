@@ -5,25 +5,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/parent_linear_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:orientation="vertical" >
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
         <EditText
-            android:id="@+id/list_item"
+            android:id="@+id/item"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:hint="Type here the name of the task"/>
+            android:hint="@string/type_here_the_name_of_the_task" />
         <Button
             android:id="@+id/delete_button"
             android:layout_width="20dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:onClick="onDelete"/>
+            android:onClick="onDelete" />
     </LinearLayout>
     <Button
         android:id="@+id/add_field_button"
@@ -36,7 +39,7 @@
         android:layout_gravity="center"
         android:onClick="onAddField"
         android:textColor="#FFF"
-        android:text="Add a new item to do"
+        android:text="@string/add_a_new_item_to_do"
         android:paddingLeft="5dp"/>
 </LinearLayout>
 </ScrollView>
