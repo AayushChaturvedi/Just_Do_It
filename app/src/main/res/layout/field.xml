@@ -2,20 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/child_linear_layout">
     <EditText
         android:id="@+id/list_item"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="5"
-        android:focusedByDefault="true"
-        android:focusable="true"
-        android:enabled="true"
-        android:hint="Type here the name of the task"/>
+        android:hint="@string/type_here_the_name_of_the_task"
+        android:textSize="20sp"/>
     <Button
         android:id="@+id/delete_button"
         android:layout_width="20dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_weight="1"
-        android:onClick="onDelete"/>
+        android:onClick="onDelete"
+        android:text="@string/done"
+        android:textSize="16dp"/>
 </LinearLayout>
